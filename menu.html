@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Our Menu</h1>
+        <p>Indulge in the Finest Coffee Experience</p>
+
+        <a href="home.html" target="_blank"><img id="logo" src="Images/Logo.png" alt="logo"></a>
+    </header>
+    <nav>
+        <a href="home.html" target="_blank">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+    </nav>
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit" onclick="search()">Search</button>
+    </div>
+    <div class="popup" id="popup">
+        <p>Oops! No internet connection.</p>
+        <button id="popupbut" onclick="closePopup()">Close</button>
+    </div>
+    <main>
+        <div class="banner">
+            <p>Free shipping in BC on orders $15 and over. Free shipping for the rest of Canada on orders $35 and over.</p>
+        </div>
+
+        <h2>Our Menu</h2>
+
+        <div class="product">
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product1.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Brazil - Natalia Brito - Fazenda Jaguara - Dark Roast</h3>
+                    <p class="product-description">Roast - Espresso & Filter</p>
+                    <p class="product-price">$25.99</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product1.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Brazil - Natalia Brito - Fazenda Jaguara - Medium Roast</h3>
+                    <p class="product-description">Roast - Espresso & Filter</p>
+                    <p class="product-price">$25.99</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+           
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product2.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Peru - Swiss Water - Mustofa Decaf - Dark Roast</h3>
+                    <p class="product-description">Roast - Espresso & Filter</p>
+                    <p class="product-price">$32.49</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product2.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Peru - Swiss Water - Mustofa Decaf - Medium Roast </h3>
+                    <p class="product-description">Roast - Espresso & Filter</p>
+                    <p class="product-price">$32.49</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product3.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Indonesia - Wildan Mustofa Wildan - Dark Roast</h3>
+                    <p class="product-description">Roast - Filter</p>
+                    <p class="product-price">$33.00</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product3.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Indonesia - Wildan Mustofa Wildan- Medium Roast</h3>
+                    <p class="product-description">Roast - Filter</p>
+                    <p class="product-price">$33.00</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product4.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Colombia - Wilder Lasso - Anaerobic Natural - Dark Roast</h3>
+                    <p class="product-description">Roast - Espresso & Filter</p>
+                    <p class="product-price">$32.29</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product4.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Colombia - Wilder Lasso - Anaerobic Natural - Medium Roast</h3>
+                    <p class="product-description">Roast - Espresso & Filter</p>
+                    <p class="product-price">$32.29</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product5.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Benchmark - Seasonal Blend: Brazil + Colombia - Dark Roast</h3>
+                    <p class="product-description">Roast - Filter</p>
+                    <p class="product-price">$24.49</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product5.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Benchmark - Seasonal Blend: Brazil Colombia - Medium Roast</h3>
+                    <p class="product-description">Roast - Filter</p>
+                    <p class="product-price">$24.49</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product6.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Ethiopia - Adorsi Washing Station Adorsi - Dark Roast</h3>
+                    <p class="product-description">Roast - Espresso & Filter</p>
+                    <p class="product-price">$23.79</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>  
+            </div>     
+            
+            <div class="product-item">
+                <div class="product-img">
+                    <img src="Images/Product6.jpg" alt="Coffee Image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">Ethiopia - Adorsi Washing Station Adorsi - Medium Roast</h3>
+                    <p class="product-description">Roast - Espresso & Filter</p>
+                    <p class="product-price">$23.79</p>
+                    <a href="order.html" class="order-button">Order Now</a>
+                </div>  
+            </div>     
+            
+        </div>
+    </main>
+    <footer>
+        <a href="home.html">Home</a> 
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+        <br>
+        <p>Contact us for inquiries: <a href="mailto:goldenbean@roaster.com">goldenbean@roaster.com</a></p>
+    
+        <h3>Follow us on Social Media</h3>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        
+        <p style="font-size: small;">&copy; 2024, GoldenBeanRoaster </p>
+    </footer>
+    <script src="javascriot.js"></script>
+</body>
+</html>
+

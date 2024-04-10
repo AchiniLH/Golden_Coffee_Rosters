@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>About Us</h1>
+        <p>Learn More About our Roastery</p>
+
+        <a href="home.html" target="_blank"><img id="logo" src="Images/Logo.png" alt="logo"></a>
+    </header>
+    <nav>
+        <a href="home.html" target="_blank">Home</a>
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+
+    </nav>
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit" onclick="search()">Search</button>
+    </div>
+    <div class="popup" id="popup">
+        <p>Oops! No internet connection.</p>
+        <button id="popupbut" onclick="closePopup()">Close</button>
+    </div>
+    <div class="container">
+        <div class="section-wrapper">
+            <div class="section">
+                <h2>Our Story</h2>
+                <p>Welcome to Golden Bean Coffee Roasters, where passion for coffee meets dedication to quality. Our journey began with a simple yet profound love for the rich flavors and aromas that only freshly roasted coffee beans can provide. Inspired by this passion, we embarked on a mission to share the joy of exceptional coffee with enthusiasts like you.</p>
+                <p>Founded by a team of coffee aficionados with decades of combined experience in the industry, Golden Bean Coffee Roasters was born out of a desire to elevate the coffee experience. Drawing on our expertise and unwavering commitment to excellence, we set out to craft the perfect cup of coffee, one batch at a time.</p>
+                <p>From humble beginnings in a small roastery, we have grown into a trusted name in the coffee community, known for our uncompromising dedication to quality and craftsmanship. Every step of our journey has been guided by a deep respect for the art and science of coffee roasting, ensuring that each batch we produce is a true testament to our passion and expertise.</p>
+            </div>
+
+            <div class="imageCarousal">
+                <div class="carousalImage fade">
+                    <img src="Images/CarousalImg1.jpg" style="width:100%; height: 400px;">
+                </div>
+
+                <div class="carousalImage fade">
+                    <img src="Images/CarousalImg2.jpg" style="width:100%; height: 400px;">
+                </div>
+
+                <div class="carousalImage fade">
+                    <img src="Images/CarousalImg3.jpg" style="width:100%;  height: 400px;">
+                </div>
+
+                <div class="carousalImage fade">
+                    <img src="Images/CarousalImg4.jpg" style="width:100%;  height: 400px;">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                  </div>
+
+            </div>
+
+            <div class="section">
+                <h2>Our Mission</h2>
+                <p>At Golden Bean Coffee Roasters, our mission is simple: to provide coffee lovers with the finest quality coffee beans that ignite the senses and inspire the soul. We believe that great coffee starts with exceptional beans, which is why we go to great lengths to source only the finest coffee beans from around the globe.</p>
+                <p>But our mission extends beyond just delivering great coffee. We are committed to fostering sustainable and ethical practices throughout our supply chain, ensuring that the farmers and communities who cultivate our coffee beans are treated with the respect and dignity they deserve. By prioritizing fair trade practices and environmentally responsible sourcing, we strive to make a positive impact on both people and planet.</p>
+                <p>Join us on our journey as we continue to pursue our passion for coffee excellence and spread the love of great coffee far and wide. Together, let's raise our mugs to a brighter, bolder, and more flavorful future.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="home.html">Home</a> 
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+        <br>
+        <p>Contact us for inquiries: <a href="mailto:goldenbean@roaster.com">goldenbean@roaster.com</a></p>
+    
+        <h3>Follow us on Social Media</h3>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+
+        <p style="font-size: small;">&copy; 2024, GoldenBeanRoaster </p>
+    </footer>
+
+<script src="javascriot.js"> </script>
+</body>
+</html>

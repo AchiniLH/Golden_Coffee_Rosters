@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Place Your Order</h1>
+        <p>Fill out the form below to place your order</p>
+
+        <a href="home.html" target="_blank"><img id="logo" src="Images/Logo.png" alt="logo"></a>
+    </header>
+    <nav>
+        <a href="home.html" target="_blank">Home</a>
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+    </nav>
+
+    <!-- Search bar-->
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit" onclick="search()">Search</button>
+    </div>
+    <div class="popup" id="popup">
+        <p>Oops! No internet connection.</p>
+        <button id="popupbut" onclick="closePopup()">Close</button>
+    </div>
+    
+    <form action="https://formspree.io/f/mdoqwboy" method="POST" >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="name">Contact Number:</label>
+        <input type="tel" id="contactnumber" name="contactnumber" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="product">Select Product:</label>
+        <select id="product" name="product" required>
+            <option value="">Select a product</option>
+            <option value="Brazil">Brazil - Natalia Brito</option>
+            <option value="Peru">Peru - Swiss Water</option>
+            <option value="Colombia">Colombia - Wilder Lasso</option>
+            <option value="Benchmark">Benchmark - Seasonal Blend</option>
+            <option value="Ethiopia">Ethiopia - Adorsi Washing Station</option>
+            <option value="Indonesia">Indonesia - Wildan Mustofa</option>   
+            <option value="Peru">Peru - Swiss Water</option>
+            <option value="Colombia">Colombia - Wilder Lasso</option>
+        </select>
+
+        <label for="roast">Coffee Roast:</label>
+        <select id="roast" name="roast" required>
+            <option value="">Select a product</option>
+            <option value="Dark">Dark Roast</option>
+            <option value="Medium">Medium Roast</option>
+            
+        </select>
+        
+        <label for="quantity">Quantity(Lb):</label>
+        <input type="number" id="quantity" name="quantity" required min="1" max="1000">       
+        
+        
+        <input type="submit" value="Submit Order" onclick="formspree.io/f/mdoqwboy">
+        
+        
+    </form>
+
+    <footer>
+        <a href="home.html">Home</a> 
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+        <br>
+        <p>Contact us for inquiries: <a href="mailto:goldenbean@roaster.com">goldenbean@roaster.com</a></p>
+    
+        <h3>Follow us on Social Media</h3>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+        
+        <p style="font-size: small;">&copy; 2024, GoldenBeanRoaster </p>
+    </footer>
+
+    <script src="javascriot.js"> </script>
+</body>
+</html>

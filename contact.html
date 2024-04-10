@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>Get in Touch With us</p>
+
+        <a href="home.html" target="_blank"><img id="logo" src="Images/Logo.png" alt="logo"></a>
+    </header>
+    <nav>
+        <a href="home.html" target="_blank">Home</a>
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+
+        
+    </nav>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit" onclick="search()">Search</button>
+    </div>
+    <div class="popup" id="popup">
+        <p>Oops! No internet connection.</p>
+        <button id="popupbut" onclick="closePopup()">Close</button>
+    </div>
+
+    <div class="container">
+
+        <div class="section-wrapper">
+        <div class="content">
+            <h2 style="color: azure;">Send Us a Message</h2>
+            <div class="contact-info">
+                <p style="text-align: center; color: azure;">Have questions or feedback? Feel free to leave the message or reach out to us directly!</p>
+                <p style="text-align: center; color: azure;"><b>Email: goldenbean@roaster.com </b></p>
+                <p style="text-align: center; color: azure;"><b>Phone: 236-888-9999</b></p>
+            </div>
+            <form action="https://formspree.io/f/mayrpvyv" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name">Contact Number:</label>
+                <input type="tel" id="contactnumber" name="contactnumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <input type="submit" value="Send Message" onclick="formspree.io/f/mayrpvyv">
+            </form>
+        </div>
+    </div>
+
+</div>
+
+    <footer>
+        <a href="home.html">Home</a> 
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+        <br>
+        <p>Contact us for inquiries: <a href="mailto:goldenbean@roaster.com">goldenbean@roaster.com</a></p>
+    
+        <h3>Follow us on Social Media</h3>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+
+        <p style="font-size: small;">&copy; 2024, GoldenBeanRoaster </p>
+    </footer>
+
+<script src="javascriot.js"> </script>
+</body>
+</html>

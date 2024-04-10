@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Golden Bean Coffee Roasters</h1>
+        <p>Indulge in the Finest Coffee Experience</p>
+
+        <a href="home.html" target="_blank"><img id="logo" src="Images/Logo.png" alt="logo"></a>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search...">
+        <button type="submit" onclick="search()">Search</button>
+    </div>
+    <div class="popup" id="popup">
+        <p>Oops! No internet connection.</p>
+        <button id="popupbut" onclick="closePopup()">Close</button>
+    </div>
+
+    <div class="hero-image">
+        <img src="Images/HeaderImg.jpg" alt="Coffee Shop" class="hero-img" style="height: 500px; width: 100%;">
+        <div class="hero-text">
+            <h1 style="font-size: 50px;">Discover Our Exquisite Coffee Blends</h1>
+            <p style="font-size: 25px;">Experience the perfect harmony of taste and aroma</p>
+        </div>
+    </div>
+
+    <div>
+        <p style="font-size: 18px; padding: 10px;">Indulge in the rich aroma and exquisite flavor of freshly roasted coffee beans sourced from the finest coffee-growing regions around the world. At Golden Bean Coffee Rosters, we are passionate about delivering exceptional quality coffee beans to fuel your daily brew.</p>
+    </div>
+    <div class="animated-img">
+        <img src="Images/AnimImg1.jpg" alt="Animated Image" class="animated fadeInLeft">
+        <img src="Images/AnimImg2.jpg" alt="Animated Image" class="animated fadeInUp">
+        <img src="Images/AnimImg3.jpg" alt="Animated Image" class="animated fadeInRight">
+        <img src="Images/AnimImg4.jpg" alt="Animated Image" class="animated fadeInRight">
+    </div>
+    <div>
+        <p style="font-size: 18px; padding: 10px;">Experience the difference that freshly roasted, premium quality coffee beans can make in your daily routine. Shop now and elevate your coffee experience with Golden Bean Coffee Roasters!</p>
+    </div>
+    
+    <footer>
+        <a href="home.html">Home</a> 
+        <a href="menu.html" target="_blank">Menu</a>
+        <a href="aboutus.html" target="_blank">About Us</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="location.html" target="_blank">Location</a>
+        <br>
+        <p>Contact us for inquiries: <a href="mailto:goldenbean@roaster.com">goldenbean@roaster.com</a></p>
+    
+        <h3>Follow us on Social Media</h3>
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+
+        <p style="font-size: small;">&copy; 2024, GoldenBeanRoaster </p>
+    </footer>
+       
+    <script src="javascriot.js"></script>
+
+</body>
+</html>
